@@ -2,7 +2,6 @@
 
 - this project consists special script commands
 - uses redux as global state management
-- native base as ui library
 - typescript as language
 
 # Setup
