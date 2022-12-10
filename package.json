@@ -1,0 +1,57 @@
+{
+  "name": "catbyteTask",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "gradle-clean": "cd android && ./gradlew clean && cd ..",
+    "android-list": "emulator -list-avds",
+    "android-emulator": "node ./scripts/android-emulator.js",
+    "ios-simulator": "node ./scripts/ios-simulator.js",
+    "pod-install": "cd ios && pod install && cd ..",
+    "pod-update": "cd ios && pod update && cd ..",
+    "bundle-install": "cd ios && bundle install && cd ..",
+    "start-clean": "react-native start --reset-cache",
+    "check-types": "tsc -w"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.0.11",
+    "@react-navigation/stack": "^6.2.2",
+    "@reduxjs/toolkit": "^1.8.3",
+    "@shopify/flash-list": "^1.4.0",
+    "axios": "^0.27.2",
+    "react": "18.1.0",
+    "react-native": "0.70.6",
+    "react-native-gesture-handler": "^2.5.0",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
+    "react-native-reanimated": "^2.9.1",
+    "react-native-safe-area-context": "^4.3.1",
+    "react-native-screens": "^3.14.1",
+    "react-redux": "^8.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/jest": "^28.1.4",
+    "@types/react": "^18.0.26",
+    "@types/react-native": "^0.70.8",
+    "@types/react-test-renderer": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "^7.32.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "0.72.3",
+    "react-test-renderer": "18.1.0",
+    "typescript": "^4.7.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
